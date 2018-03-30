@@ -2,7 +2,8 @@ package com.sqq.app.util;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
+
+import com.orhanobut.logger.Logger;
 
 public class MainActivity extends Activity {
 
@@ -17,9 +18,7 @@ public class MainActivity extends Activity {
         editText.setOnTextChangeListener(new FormatEditText.OnTextChangeListener() {
             @Override
             public void onTextChange(CharSequence origin, CharSequence format) {
-                Log.i(TAG, origin.toString() + "%%%%%%%%%");
-                Log.i(TAG, format.toString() + "%%%%%%%%%");
-                Log.i(TAG, "---------------------");
+                Logger.w(origin.toString() + "%%%%%%%%%");
             }
         });
     }
