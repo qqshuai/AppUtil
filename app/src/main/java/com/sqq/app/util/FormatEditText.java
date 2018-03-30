@@ -18,7 +18,7 @@ import android.widget.EditText;
 public class FormatEditText extends EditText {
 
     private static final char BLANK = ' ';
-    private static final int[] PATTERN = {4, 3, 4};
+    private static final int[] PATTERN = {3, 4, 4};
     private OnTextChangeListener mListener;
     private boolean callBackSwitch;
 

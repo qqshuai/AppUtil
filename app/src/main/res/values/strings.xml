@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppUtil</string>
+    <string name="query">查询</string>
 </resources>
